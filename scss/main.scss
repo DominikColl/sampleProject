@@ -1,0 +1,146 @@
+// main.scss
+//@768 px needs fix some notes are centered other 1 is not ???????
+//width of li needs to be longer for description!!!!!
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import "var.scss";
+@import "mixin.scss";
+@import "reset.scss";
+body{
+    background: $bodyColor;
+}
+nav{ 
+    //not a good fix but works visually up to 250pxs
+    // @media screen and(max-width:435px) {
+    //     padding-right: 10rem;
+    // }
+    background: $navColor;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        border-radius: 50%;
+        background: #00a5e0;
+        padding: .3rem;
+       margin-right: 5%;
+    }
+}
+main{
+    width: 95%;
+    margin: 0 auto;
+}
+//use display grid instead of inline block
+section{
+    @media screen and (min-width:767px) {
+         display: inline-block;
+         width: 32%;
+    }
+    @media screen and(max-width:768px){
+        display: block;   
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:767px){
+section:first-of-type{
+    margin-left: 3%;
+}}
+a,img,h1{
+    display: inline-block;
+}
+h1{
+    font-family: $mainFont;
+    margin-left: 5%;
+    margin-top: 1rem;
+    
+}
+h2{
+    font-family: $mainFont;
+    color: $h2Color;
+    display: inline;
+}
+li{
+    //mixin
+    @include li($mainFont,$liColor,$liPadding,$liMargin);
+}
+section{
+    button{
+    font-family: $mainFont;
+    background: $addTaskColor;
+    display: block;
+    padding:.3rem;
+    border-radius: 2px;
+    width: 65px;
+    text-decoration: none;
+}}
+img{
+    width:20px;
+    height: 20px;
+}
+time{
+    @media screen and (min-width:1351px){
+    font-family: $mainFont;
+    color:#27AE60;
+    position: relative;
+    left: 70%;
+    
+    }
+    @media screen and(max-width:1350px){
+        font-family: $mainFont;
+        color:#27AE60;
+        font-size: 1rem;
+        margin-left: .2rem;
+    }
+}
+li{
+    h3{
+    font-size: 1rem;
+    margin-left: .5rem;
+    color: black;
+}}
+//serperated to demonstarte nesting
+li {
+    p{
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+
+img{
+    @media screen and (min-width:1351px){
+        position: relative;
+        left: 70%;
+    }
+   @media screen and (max-width:1350px) {
+        width: 0px;
+        height: 0px;   
+   }
+}
+}
+form{
+    background-color: $navColor;
+    font-family: $mainFont;
+    padding:1rem;
+    display: inline-block;
+    border-radius: 3%;
+    margin-left: 25%;
+    input,label,button{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    button{
+        margin-top: .3rem;
+    }
+}
+.nightmodeNav{
+    background-color:#081B33;
+}
+.nightmodeBody{
+    background-color:#152642;
+}
+.nightmodeLi{
+    background-color:#2F4562;
+}
+.nightmodeForm{
+    background-color:#2F4562;
+}

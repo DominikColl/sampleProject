@@ -1,0 +1,9 @@
+@mixin li($font,$background,$liPadding,$liMargin) {
+    font-family: $font;
+    background: $background;
+    list-style-type:none ;
+   padding-top: $liPadding;
+   margin-bottom: $liPadding;
+   margin-right: $liMargin;
+   margin-bottom: $liMargin;
+}

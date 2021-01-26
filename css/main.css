@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  padding: 0; }
+
+body {
+  background: #f7f8f9; }
+
+nav {
+  background: #00bcff;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  nav img {
+    border-radius: 50%;
+    background: #00a5e0;
+    padding: .3rem;
+    margin-right: 5%; }
+
+main {
+  width: 95%;
+  margin: 0 auto; }
+
+@media screen and (min-width: 767px) {
+  section {
+    display: inline-block;
+    width: 32%; } }
+
+@media screen and (max-width: 768px) {
+  section {
+    display: block;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 767px) {
+  section:first-of-type {
+    margin-left: 3%; } }
+
+a, img, h1 {
+  display: inline-block; }
+
+h1 {
+  font-family: "PT sans";
+  margin-left: 5%;
+  margin-top: 1rem; }
+
+h2 {
+  font-family: "PT sans";
+  color: #666666;
+  display: inline; }
+
+li {
+  font-family: "PT sans";
+  background: #ffffff;
+  list-style-type: none;
+  padding-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+section button {
+  font-family: "PT sans";
+  background: #e5e5e5;
+  display: block;
+  padding: .3rem;
+  border-radius: 2px;
+  width: 65px;
+  text-decoration: none; }
+
+img {
+  width: 20px;
+  height: 20px; }
+
+@media screen and (min-width: 1351px) {
+  time {
+    font-family: "PT sans";
+    color: #27AE60;
+    position: relative;
+    left: 70%; } }
+
+@media screen and (max-width: 1350px) {
+  time {
+    font-family: "PT sans";
+    color: #27AE60;
+    font-size: 1rem;
+    margin-left: .2rem; } }
+
+li h3 {
+  font-size: 1rem;
+  margin-left: .5rem;
+  color: black; }
+
+li p {
+  font-size: 1rem;
+  margin-left: .5rem; }
+
+@media screen and (min-width: 1351px) {
+  li img {
+    position: relative;
+    left: 70%; } }
+
+@media screen and (max-width: 1350px) {
+  li img {
+    width: 0px;
+    height: 0px; } }
+
+form {
+  background-color: #00bcff;
+  font-family: "PT sans";
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 3%;
+  margin-left: 25%; }
+  form input, form label, form button {
+    display: block;
+    text-align: center;
+    margin: 0 auto; }
+  form button {
+    margin-top: .3rem; }
+
+.nightmodeNav {
+  background-color: #081B33; }
+
+.nightmodeBody {
+  background-color: #152642; }
+
+.nightmodeLi {
+  background-color: #2F4562; }
+
+.nightmodeForm {
+  background-color: #2F4562; }
